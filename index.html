@@ -83,7 +83,8 @@
         #team #shot-button,
         #team #upper-shot-button,
         #team #objectglass-shadow,
-        #team #under-objectglass-shadow {
+        #team #under-objectglass-shadow,
+        #team #minor-shadow {
             transition: all .2s;
         }
 
@@ -97,6 +98,10 @@
         }
 
         #team:hover #under-objectglass-shadow {
+            opacity: .5;
+        }
+
+        #team:hover #minor-shadow {
             opacity: .5;
         }
 
@@ -410,7 +415,7 @@
       </g>
     </g>
     <g id='team'>
-      <path fill="#000" fill-opacity=".1" d="M1115 1174.5l-48 33.904-14-7.38 48-33.904 14 7.38z"/>
+      <path id='minor-shadow' fill="#000" fill-opacity=".1" d="M1115 1174.5l-48 33.904-14-7.38 48-33.904 14 7.38z"/>
       <path id='objectglass-shadow' fill="#000" fill-opacity=".06" d="M967.15 1154.717l-26.772 17.828-60.504-32.55 30.85-16.995 56.427 31.717z"/>
       <path fill="#000" fill-opacity=".04" d="M967.15 1154.717l-26.772 17.828-60.504-32.55 30.85-16.995 56.427 31.717z"/>
       <g transform="translate(866 953)">
